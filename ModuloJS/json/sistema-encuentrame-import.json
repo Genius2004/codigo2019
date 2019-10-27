@@ -1,0 +1,21 @@
+{
+  "Apoyo" : {
+    "Ap2" : {
+      "ClaveUsr" : 2,
+      "Correo" : "hmg_genius2004@yahoo.com.mx",
+      "Nombre" : "Gude Hernandez",
+      "Telefono" : "015559304146"
+    }
+  },
+  "Modalidad" : {
+    "Tipo1" : "Perdido",
+    "Tipo2" : "Peligro"
+  },
+  "Usuario" : {
+    "Usr2" : {
+      "ClaveUsr" : 1,
+      "Coordenadas" : "19, 20",
+      "Nombre" : "Luis Alvarado"
+    }
+  }
+}

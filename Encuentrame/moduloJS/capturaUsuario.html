@@ -1,0 +1,114 @@
+<!DOCTYPE>
+<!--
+    Participante: Gudelia Hernández Molina GHM
+    Proyecto Encuentrame: Capturar los registros de los usuarios
+-->
+<html>
+    <head lang = "es-ES">
+        <title>Registro del usuario</title>
+        <!-- Codificación -->
+        <meta charset="utf-8">
+        <!-- Etiquetas para buscadores -->
+        <meta name="keywords" content="Usuarios, Encuentra" />
+        <meta name="author" content="Gudelia Hernández Molina" />
+        <link rel="shorcut icon" type="image/x-icon" href="./img/ghm.ico">
+        <!-- Conectando CSS -->
+        <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/7.2.2/firebase-app.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+            <script src="/__/firebase/7.2.2/firebase-analytics.js"></script>
+        <!-- Initialize Firebase -->
+            <script src="/__/firebase/init.js"></script>
+    </head>
+    <body bgcolor="lavenderblush">
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyBBWk7YTqJrehMimqhEzRbo4s7GIs-ECbA",
+            authDomain: "sistema-encuentrame.firebaseapp.com",
+            databaseURL: "https://sistema-encuentrame.firebaseio.com",
+            projectId: "sistema-encuentrame",
+            storageBucket: "sistema-encuentrame.appspot.com",
+            messagingSenderId: "458528677185",
+            appId: "1:458528677185:web:5320c4ac3e659f18ae95c0",
+            measurementId: "G-MTXBFWQ82S"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+        </script>
+        <!--Sección del menú-->
+        <header>
+            <nav>
+            <!--Menú -->
+            <table class="tableMenu" id=inicio>
+                <colgroup>
+                    <col style="width: 10%" 7>
+                    <col style="width: 20%" />
+                    <col style="width: 40%" />
+                    <col style="width: 30%" />
+                </colgroup>
+                <tr>
+                    <th>
+                        <img src="./img/logo.jpg" width="50" alt="50" al>
+                    </th>
+                    <th>
+                       <a href="./index.html">Inicio</a>
+                    </th>
+                    <th>
+                       <a href="#liga02">Registro de usuario</a>
+                    </th>
+                    <th>
+                       <a href="./capturaApoyo.html">Registro de Personas de Apoyo</a>
+                    </th>
+                    <th>
+                       <a href="./muestraRegistros.html">Mostrar Registro</a>
+                    </th>
+                </tr>
+            </table>
+            <h1 id=liga02 align="center">GHM: Sistema Encuentrame</h1>
+            </nav>
+        </header>
+        <div>
+            <form class="estiloParrafoFormulario">
+                <label for "nombre">Nombre:</label>
+                    <input type="text" placeholder="Escribe tu nombre" maxlength="30" name="nombre" id="name">
+                <label for "apellidos">Apellidos:</label>
+                    <input type="text" placeholder="Escribe tus apellidos" maxlength="40" name="apellidos" id="apellidos">
+                <br><br>
+                <label>Género:</label>
+                    <input type="radio" name=gender value="mujer">Mujer
+                    <input type="radio" name=gender value="hombre">Hombre
+                <br><br>
+                <label>Edad:</label>
+                <input type="number"  maxlength="3">
+                <br><br>
+                <label>Nacionalidad:</label>
+                <select>
+                    <option value="Mexicana">México</option>
+                    <option value="Otra">Extranjero</option>
+                </select>
+                <br><br>
+                <label for "numCta">Número de cuenta:</label>
+                    <input type="text" maxlength="9" >
+                <label for "carrera">Carrera:</label>
+                    <input type="text" placeholder="Escribe tu carrera" maxlength="40" name="carrera" id="carrera" >
+                <br><br>
+                <label>Correo:</label>
+                <input type="email"  maxlength="50">
+                <br><br>
+                <label for "pwd">Contraseña:</label>
+                    <input type="password"  maxlength="20" name="pwd" id="pwd">
+                <br><br>
+                <button type="button" onclick="muestraMsg()">Muestra mensaje</button>
+                <button type="button"
+                    value="tiempo" onclick="msgTime()">Tiempo</button>
+            </form>
+        </div>
+        <hr>
+        <div class="txtRegInicio">
+            <a href="#liga02">Regresar al inicio</a>
+        </div>
+    </body>
+</html>

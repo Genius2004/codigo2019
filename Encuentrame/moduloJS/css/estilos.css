@@ -1,0 +1,40 @@
+form{
+    width: 100%;
+    border: 1px solid #ccc;
+    margin:  20px;
+    padding: 20px;
+}
+
+label{
+    font-size: 12px;
+    display: block; /*Coloca arriba del bloqu*/
+    width: 100px;
+}
+
+textarea{
+    resize: vertical;
+    max-height: 300px;
+    min-height: 100px;
+}
+input, textarea{
+    margin-top: 20px;
+    width: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus{
+    border: 1px solid #1668c4;
+}
+
+input[type="submit"]{
+    margin-top: 0;
+    background: #1668c4;
+    color: #fff;
+    border: none;
+}
+input[type="submit"]:hover{
+    background: #4a88f4;
+    cursor: pointer;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<!--
+    Participante: Gudelia Hernández Molina GHM
+    Proyecto Encuentrame: Capturar los registros de las personas de Apoyo
+-->
+<html>
+    <head lang = "es-ES">
+        <title>Registro de las personas de apoyo</title>
+        <!-- Codificación -->
+        <meta charset="utf-8">
+        <!-- Etiquetas para buscadores -->
+        <meta name="keywords" content="Apoyo, Encuentra" />
+        <meta name="author" content="Gudelia Hernández Molina" />
+        <link rel="shorcut icon" type="image/x-icon" href="./img/ghm.ico">
+        <!-- Conectando CSS -->
+        <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/7.2.2/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+            <script src="/__/firebase/7.2.2/firebase-analytics.js"></script>
+        <!-- Initialize Firebase -->
+            <script src="/__/firebase/init.js"></script>
+    </head>
+    <body bgcolor="lavenderblush">
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyBBWk7YTqJrehMimqhEzRbo4s7GIs-ECbA",
+            authDomain: "sistema-encuentrame.firebaseapp.com",
+            databaseURL: "https://sistema-encuentrame.firebaseio.com",
+            projectId: "sistema-encuentrame",
+            storageBucket: "sistema-encuentrame.appspot.com",
+            messagingSenderId: "458528677185",
+            appId: "1:458528677185:web:5320c4ac3e659f18ae95c0",
+            measurementId: "G-MTXBFWQ82S"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+        </script>
+        <header>
+            <!--Sección del menú-->
+            <nav>
+            <!--Menú -->
+            <table class="tableMenu" id=inicio>
+                <colgroup>
+                    <col style="width: 10%" 7>
+                    <col style="width: 20%" />
+                    <col style="width: 40%" />
+                    <col style="width: 30%" />
+                </colgroup>
+                <tr>
+                    <th>
+                        <img src="./img/logo.jpg" width="50" alt="50" al>
+                    </th>
+                    <th>
+                       <a href="./index.html">Inicio</a>
+                    </th>
+                    <th>
+                       <a href="./capturaUsuario.html">Registro de Usuarios</a>
+                    </th>
+                    <th>
+                       
+                       <a href="#liga03">Registro de Personas de Apoyos</a>
+                    </th>
+                    <th>
+                       <a href="./muestraRegistros.html">Mostrar Registro</a>
+                    </th>
+                </tr>
+            </table>
+            <h1 id=liga03 align="center">GHM: Sistema Encuentrame</h1>
+        </nav>
+        </header>
+        <div>
+            <form class="estiloParrafoFormulario">
+            </form>
+        </div>  
+    </body>
+</html>
